@@ -1,0 +1,53 @@
+<html>
+<head>
+</head>
+<body>
+<input value="" id="inputBox"></input>
+
+<input type="button" value="Double" onclick="double()"/>
+
+<p>Number1: <input value="" id="number1"/></p>
+<p>Number2: <input value="" id="number2"/></p>
+<p>Number3: <input value="" id="number3"/></p>
+<p>Number4: <input value="" id="number4"/></p>
+<p>Division value: <input value="" id="divBox"/></p>
+<br>
+<input type="button" value="Check" onclick="checker()"/>
+
+<script>
+function double(){
+	var userInput = document.getElementById("inputBox").value;
+	var multiResult=0;
+	
+	if (userInput === ""){
+		alert("Input could not be blank.");
+	} else if (isNaN(userInput)){
+		alert("Input should be a number.");
+	} else { 
+		multiResult = eval(userInput * 2);
+		document.getElementById("inputBox").value = multiResult;
+	}
+}
+
+function checker(){
+	var input1 = document.getElementById("number1").value;
+	var input2 = document.getElementById("number2").value;
+	var input3 = document.getElementById("number3").value;
+	var input4 = document.getElementById("number4").value;	
+	var divisionValue = document.getElementById("divBox").value;
+
+	if (input1 < 0 || input2 < 0 || input3 < 0 || input4 < 0 || divBox < 0){
+		alert("Input should only be positive");
+	} else {
+		if(input1 % divisionValue == 0 && input2 % divisionValue == 0 && input3 % divisionValue == 0 && input1 % divisionValue == 0){
+			alert("Each number divided by Devision value gets a reminder of 0.");
+		} else {
+			alert("Not all of these numbers divided by Division value get a reminder of 0");
+		}
+	}	
+}
+</script>
+</body>
+</html>
+<br>
+github link: https://github.com/Mintydew/Assignment-3-Infosys280.git
