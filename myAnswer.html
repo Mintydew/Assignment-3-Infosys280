@@ -10,6 +10,10 @@
 <p>Number2: <input value="" id="number2"/></p>
 <p>Number3: <input value="" id="number3"/></p>
 <p>Number4: <input value="" id="number4"/></p>
+<p>Number5: <input value="" id="number5"/></p>
+<p>Number6: <input value="" id="number6"/></p>
+<p>Number7: <input value="" id="number7"/></p>
+<p>Number8: <input value="" id="number8"/></p>
 <p>Division value: <input value="" id="divBox"/></p>
 <br>
 <input type="button" value="Check" onclick="checker()"/>
@@ -35,12 +39,16 @@ function checker(){
 	var input2 = document.getElementById("number2").value;
 	var input3 = document.getElementById("number3").value;
 	var input4 = document.getElementById("number4").value;	
+	var input5 = document.getElementById("number5").value;	
+	var input6 = document.getElementById("number6").value;	
+	var input7 = document.getElementById("number7").value;	
+	var input8 = document.getElementById("number8").value;	
 	var divisionValue = document.getElementById("divBox").value;
 
-	if (input1 < 0 || input2 < 0 || input3 < 0 || input4 < 0 || divBox < 0){
+	if (input1 < 0 || input2 < 0 || input3 < 0 || input4 < 0 || input5 < 0 || input6 < 0 || input7 < 0 || input8 < 0 || divBox < 0){
 		alert("Input should only be positive");
 	} else {
-		if(input1 % divisionValue == 0 && input2 % divisionValue == 0 && input3 % divisionValue == 0 && input1 % divisionValue == 0){
+		if(input1 % divisionValue == 0 && input2 % divisionValue == 0 && input3 % divisionValue == 0 && input4 % divisionValue == 0 input5 % divisionValue == 0 input6 % divisionValue == 0 input7 % divisionValue == 0 input8 % divisionValue == 0){
 			alert("Each number divided by Devision value gets a reminder of 0.");
 		} else {
 			alert("Not all of these numbers divided by Division value get a reminder of 0");
